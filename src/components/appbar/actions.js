@@ -17,7 +17,7 @@ export default function Actions() {
       </ListItemButton>
       <ListItemButton>
         <ListItemIcon>
-          <Peopleo />
+          <People />
         </ListItemIcon>
       </ListItemButton>
     </MyList>
