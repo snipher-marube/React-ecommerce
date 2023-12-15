@@ -9,9 +9,9 @@ export default function Appbar() {
         <>
             
             {matches ? 
-               <AppbarMobile/>
+               <AppbarMobile matches={matches} />
              : 
-                <AppbarDesktop/>
+                <AppbarDesktop matches={matches} />
             }
         </>
     )

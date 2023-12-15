@@ -7,11 +7,6 @@ import Actions from "./actions";
 
 export default function AppbarDesktop({ matches }) {
   return (
-    /**
-     * appbar container
-     * header
-     * List
-     */
     <AppbarContainer>
       <AppbarHeader>My Bags</AppbarHeader>
       <MyList type="row">
@@ -19,16 +14,25 @@ export default function AppbarDesktop({ matches }) {
           className="cursor-pointer hover:text-yellow-950"
           primary="Home"
         />
-        <ListItemText className="cursor-pointer hover:text-yellow-950" primary="Categories" />
-        <ListItemText className="cursor-pointer hover:text-yellow-950" primary="Products" />
-        <ListItemText className="cursor-pointer hover:text-yellow-950" primary="Contact Us" />
+        <ListItemText
+          className="cursor-pointer hover:text-yellow-950"
+          primary="Categories"
+        />
+        <ListItemText
+          className="cursor-pointer hover:text-yellow-950"
+          primary="Products"
+        />
+        <ListItemText
+          className="cursor-pointer hover:text-yellow-950"
+          primary="Contact Us"
+        />
         <ListItemButton>
-            <ListItemIcon>
-                <SearchIcon/>
-            </ListItemIcon>
+          <ListItemIcon>
+            <SearchIcon />
+          </ListItemIcon>
         </ListItemButton>
       </MyList>
-      <Actions />
+      <Actions matches={matches} />
     </AppbarContainer>
   );
 }

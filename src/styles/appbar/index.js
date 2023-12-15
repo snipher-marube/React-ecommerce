@@ -29,3 +29,20 @@ export const MyList = styled(List)(({ type }) => ({
   justifyContent: "center",
   alignItems: "center",
 }));
+
+// Action icons container
+export const ActionIconsContainerMobile = styled(Box)(() => ({
+  display: "flex",
+  backgroundColor: Colors.shaft,
+  position: "fixed",
+  bottom: 0,
+  left: 0,
+  width: "100%",
+  alignItems: "center",
+  zIndex: 99,
+  borderTop: `1px solid ${Colors.border}`,
+}));
+
+export const ActionIconsContainerDesktop = styled(Box)(() => ({
+  flexGrow: 0,
+}));
